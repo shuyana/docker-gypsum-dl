@@ -27,7 +27,7 @@ RUN apt-get update \
 ENV PATH="/opt/conda/bin:$PATH"
 RUN conda install -y -c conda-forge \
         python=3.11 \
-        rdkit=2023.03.3\
+        rdkit=2023.09.1\
         numpy=1.26.0 \
         scipy=1.11.3 \
         mpi4py=3.1.4 \
