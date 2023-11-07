@@ -34,7 +34,7 @@ RUN conda install -y -c conda-forge \
     && conda clean --all --force-pkgs-dirs --yes
 
 ENV PYTHONPATH="/opt/gypsum_dl:${PYTHONPATH}"
-RUN git clone -b fix-durrant_lab_filters --depth 1 https://github.com/shuyana/gypsum_dl.git /opt/gypsum_dl
+RUN git clone https://github.com/durrantlab/gypsum_dl.git /opt/gypsum_dl
 
 RUN adduser --disabled-password --gecos "" user
 
