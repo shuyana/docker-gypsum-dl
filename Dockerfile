@@ -27,10 +27,10 @@ RUN apt-get update \
 ENV PATH="/opt/conda/bin:$PATH"
 RUN conda install -y -c conda-forge \
         python=3.11 \
-        rdkit=2023.09.1\
-        numpy=1.26.0 \
-        scipy=1.11.3 \
-        mpi4py=3.1.4 \
+        rdkit=2024.3.2 \
+        numpy=1.26.4 \
+        scipy=1.13.0 \
+        mpi4py=3.1.6 \
     && conda clean --all --force-pkgs-dirs --yes
 
 ENV PYTHONPATH="/opt/gypsum_dl:${PYTHONPATH}"
